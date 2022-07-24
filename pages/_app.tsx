@@ -3,6 +3,7 @@ import Head from "../components/Head";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
 import "../library/main.scss";
+import { MDXProvider } from "@mdx-js/react";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
