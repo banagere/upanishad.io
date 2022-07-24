@@ -20,20 +20,20 @@ export default function PostPage({ post }: { post: MDXPost }) {
         <title>{post.meta.title}</title>
       </Head>
 
-      <div className="mt-2 font-semibold text-orange-500 hover:text-orange-400">
+      <span className="mt-2 font-semibold text-bronze-600 hover:text-bronze-400">
         <Link href="/">← Home</Link>
-      </div>
+      </span>
 
-      <h1 className="mt-5 text-2xl font-bold">
+      <h1 className="mt-5 text-3xl font-bold">
         {post.meta.title}
       </h1>
       <div className="py-2">
-        <span className="rounded-md bg-orange-600 text-white px-2 py-1 text-sm">
+        <span className="rounded-md bg-bronze-400 text-white px-2 py-1 text-sm">
           {post.meta.veda}
         </span>
       </div>
 
-      <article className="prose prose-h1:text-2xl prose-h2:text-xl prose-h2:text-neutral-500 prose-h3:text-lg prose-h3:text-neutral-400 prose-h3:mt-2 prose-headings:m-0 prose-img:rounded-md pt-5">
+      <article className="prose prose-h1:text-2xl prose-h2:text-xl prose-h2:text-gray-400 prose-h3:text-lg prose-h3:text-bronze-500 prose-h3:mt-2 prose-headings:m-0 prose-img:rounded-md pt-5">
         <MDXRemote {...post.source} components={{ Image }} />
       </article>
     </>

@@ -62,13 +62,8 @@ export default function Main() {
         {/* safari tab colour https://www.amitmerchant.com/get-your-website-ready-tab-bar-theming-of-safari-15/ */}
         <meta
           name="theme-color"
-          content="#FFFFFF"
+          content="#F8F8F8"
           media="(prefers-color-scheme: light)"
-        />
-        <meta
-          name="theme-color"
-          content="#000000"
-          media="(prefers-color-scheme: dark)"
         />
       </Head>
 
