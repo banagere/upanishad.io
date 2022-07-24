@@ -2,10 +2,12 @@ import Link from "next/link";
 
 export default function Banner() {
   return (
-    <header className="font-extrabold text-3xl max-w-3xl mx-auto hover:text-neutral-700 py-5 text-center">
+    <header className="mx-auto py-7 text-center">
+      <span className="hover:text-orange-400 font-extrabold text-3xl ">
         <Link href="/" passHref>
           Upanishad
         </Link>
+      </span>
     </header>
   );
 }

@@ -9,10 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mdx-js/loader": "^2.1.2",
+    "@mdx-js/react": "^2.1.2",
+    "@next/mdx": "^12.2.3",
+    "@tailwindcss/typography": "^0.5.4",
+    "@types/glob": "^7.2.0",
+    "glob": "^8.0.3",
+    "gray-matter": "^4.0.3",
     "next": "12.2.3",
+    "next-mdx-remote": "^4.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "sass": "^1.54.0"
+    "rehype-highlight": "^5.0.2",
+    "rehype-slug": "^5.0.1",
+    "sass": "^1.54.0",
+    "webpack": "^5.73.0"
   },
   "devDependencies": {
     "@types/node": "18.0.6",

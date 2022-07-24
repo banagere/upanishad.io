@@ -1,11 +1,18 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
+import { getAllPosts, PostMeta } from "../components/api";
+import Articles from "../components/Articles";
 
-const Home: NextPage = () => {
+export default function Home({ posts }: { posts: PostMeta[] }) {
   return (
-    <h1>Homepage</h1>
-  )
+    <>
+      <div className="max-w-3xl mx-auto px-4">
+        <Articles posts={posts} />
+      </div>
+    </>
+  );
 }
 
-export default Home
+export async function getStaticProps() {
+  const posts = getAllPosts().map((post) => post.meta);
+
+  return { props: { posts } };
+}
