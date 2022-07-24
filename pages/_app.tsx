@@ -1,12 +1,14 @@
 import type { AppProps } from "next/app";
+import Head from "../components/Head";
+import Banner from "../components/Banner";
 import Footer from "../components/Footer";
-import Header from "../components/Header";
 import "../library/main.scss";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Header />
+      <Head />
+      <Banner />
       <Component {...pageProps} />
       <Footer />
     </>
