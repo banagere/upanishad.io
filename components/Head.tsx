@@ -11,7 +11,7 @@ export default function Main() {
           name="description"
           content="The Upanishads are Sanskrit texts which form the foundations of Hinduism."
         />
-        <meta name="keywords" content="Writer, Musician, Developer" />
+        <meta name="keywords" content="Upanishad, Veda" />
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
