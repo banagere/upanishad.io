@@ -1,9 +1,8 @@
-import type { AppProps } from "next/app";
 import Head from "../components/Head";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
-import "../library/main.scss";
-import { MDXProvider } from "@mdx-js/react";
+import "library/main.scss"
+import { AppProps } from "next/app";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
