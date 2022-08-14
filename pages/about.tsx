@@ -7,7 +7,7 @@ export default function About() {
         <title>About</title>
       </Head>
 
-      <div className="prose prose-h1:text-2xl prose-headings:m-0 pt-5">
+      <div className="pt-5 prose prose-p:text-black prose-h1:text-2xl prose-headings:m-0">
         <h1>About</h1>
         <p>
           The Upanishads <b>(Sanskrit: उपनिषद्)</b> are late Vedic Sanskrit

@@ -4,7 +4,10 @@ import {
   makeSource,
 } from "contentlayer/source-files";
 
+import readingTime from "reading-time";
+
 const computedFields: ComputedFields = {
+  readingTime: { type: "json", resolve: (doc) => readingTime(doc.body.raw) },
   url: {
     type: "string",
     resolve: (doc) => `/u/${doc._raw.flattenedPath}`,
