@@ -41,10 +41,6 @@ const PostLayout = ({ post }) => {
         <span className="px-2 py-1 text-sm text-white rounded-md bg-bronze-400">
           {post.veda}
         </span>
-        {"  "}
-        <span className="px-2 py-1 text-sm text-white rounded-md bg-bronze-400">
-          {post.readingTime.text}
-        </span>
       </div>
 
       <article className="pt-5 prose prose-p:text-black prose-h1:text-2xl prose-h2:text-xl prose-h2:text-gray-400 prose-h3:text-lg prose-h3:text-bronze-500 prose-h3:mt-2 prose-headings:m-0 prose-img:rounded-md dark:prose-invert">
