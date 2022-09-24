@@ -72,15 +72,11 @@ export default function Main() {
         />
       </Head>
 
-      {/* Chiffre Script */}
+      {/* Goatcounter Script */}
       <Script
+        data-goatcounter="https://upanishad.goatcounter.com/count"
         async
-        id="chiffre:analytics"
-        src="https://chiffre.io/analytics.js"
-        data-chiffre-project-id="YC2pypEcfFrMN9k0"
-        data-chiffre-public-key="pk.gfoFTJN5ynMHN1iBOmc0U9cAGYymagJjOTNY1SuDihU"
-        referrerPolicy="origin"
-        crossOrigin="anonymous"
+        src="//gc.zgo.at/count.js"
       />
     </>
   );
