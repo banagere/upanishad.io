@@ -20,7 +20,7 @@ const Post = defineDocumentType(() => ({
   contentType: "mdx",
   fields: {
     title: { type: "string", required: true },
-    weight: { type: "string", required: true },
+    weight: { type: "number", required: true },
     veda: { type: "string", required: true },
     category: { type: "string", required: true },
   },

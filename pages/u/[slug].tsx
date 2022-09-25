@@ -28,10 +28,10 @@ export async function getStaticProps({ params }) {
 
 const PostLayout = ({ post }) => {
   useEffect(() => {
-    fetch(`/api/views/${frontMatter.title}`, {
+    fetch(`/api/views/${post.title}`, {
       method: "POST",
     });
-  }, [frontMatter.title]);
+  }, [post.title]);
 
   const MDXContent = useMDXComponent(post.body.code);
 
@@ -51,7 +51,10 @@ const PostLayout = ({ post }) => {
 
       <div className="py-2">
         <span className="px-2 py-1 text-sm text-white rounded-md bg-bronze-400">
-          {post.veda} {" | "}<PageViews slug={frontmatter.title} />
+          {post.veda}
+        </span>
+        <span className="ml-2 px-2 py-1 text-sm text-white rounded-md bg-bronze-400">
+          <PageViews slug={post.title} />
         </span>
       </div>
 
