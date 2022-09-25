@@ -2,6 +2,12 @@ import Head from "next/head";
 import Link from "next/link";
 import { allPosts } from "contentlayer/generated";
 import { useMDXComponent } from "next-contentlayer/hooks";
+import { useEffect } from "react";
+import PageViews from "../../components/PageViews";
+
+interface BlogLayoutProps {
+  slug: string;
+}
 
 export async function getStaticPaths() {
   const paths = allPosts.map((post) => post.url);
@@ -21,6 +27,12 @@ export async function getStaticProps({ params }) {
 }
 
 const PostLayout = ({ post }) => {
+  useEffect(() => {
+    fetch(`/api/views/${frontMatter.title}`, {
+      method: "POST",
+    });
+  }, [frontMatter.title]);
+
   const MDXContent = useMDXComponent(post.body.code);
 
   return (
@@ -39,7 +51,7 @@ const PostLayout = ({ post }) => {
 
       <div className="py-2">
         <span className="px-2 py-1 text-sm text-white rounded-md bg-bronze-400">
-          {post.veda}
+          {post.veda} {" | "}<PageViews slug={frontmatter.title} />
         </span>
       </div>
 
