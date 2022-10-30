@@ -9,9 +9,7 @@ export async function getStaticProps() {
     return 0;
   });
 
-  const posts = sortedPosts.map((post) =>
-  pick(post, ["url", "title", "veda"])
-  )
+  const posts = sortedPosts.map((post) => pick(post, ["url", "title", "veda"]));
 
   return { props: { posts } };
 }
@@ -21,10 +19,11 @@ function PostCard(post: Post) {
     <>
       <ul className="flex flex-col gap-1">
         <li className="py-px">
-          <Link href={post.url}>
-            <a className="text-2xl font-bold hover:text-bronze-500">
-              {post.title}
-            </a>
+          <Link
+            href={post.url}
+            className="text-2xl font-bold hover:text-bronze-500"
+          >
+            {post.title}
           </Link>
         </li>
       </ul>

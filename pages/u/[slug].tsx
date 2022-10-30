@@ -41,10 +41,11 @@ const PostLayout = ({ post }) => {
         <title>{post.title}</title>
       </Head>
 
-      <Link href="/">
-        <a className="mt-2 font-semibold text-bronze-600 hover:text-bronze-400">
-          ← Home
-        </a>
+      <Link
+        href="/"
+        className="mt-2 font-semibold text-bronze-600 hover:text-bronze-400"
+      >
+        ← Home
       </Link>
 
       <h1 className="mt-5 text-3xl font-bold">{post.title}</h1>
