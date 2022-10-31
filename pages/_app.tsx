@@ -5,6 +5,7 @@ import * as config from "../lib/config";
 import { defaultSeo } from "../lib/config/seo";
 import { DefaultSeo } from "next-seo";
 import { useRouter } from "next/router";
+import { Analytics } from "@vercel/analytics/react";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -25,6 +26,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
       <Layout>
         <Component {...pageProps} />
+        <Analytics />
       </Layout>
     </>
   );
